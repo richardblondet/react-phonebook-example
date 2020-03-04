@@ -1,26 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { StateProvider } from './store';
+import { Reducer, initialState } from './reducers';
+import { Container, Row, Col, Card } from 'reactstrap';
+import { Header, Form, Contacts, EmptyState } from './components';
 
-function App() {
+/**
+ * Application Component
+ */
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <StateProvider reducer={Reducer} initialState={initialState}>
+      <div className={"App p-5"}>
+        <Container>
+          <Row>
+            <Col sm={{ size: 6, offset: 3 }}>
+              <Card className={"shadow-lg border-0"}>
+                <Header />
+                <Form />
+                <Contacts />
+                <EmptyState />
+              </Card>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+    </StateProvider>
   );
-}
+};
 
 export default App;

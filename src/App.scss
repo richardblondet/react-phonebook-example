@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap');
+
+// Custom Variables @author Richard Blondet
+$font-family-sans-serif: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+// Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.contact--item {
+  .button--edit-contact, .checkbox--select-contact {
+    opacity: 0;
+  }
+  
+  &:hover {
+    .button--edit-contact, .checkbox--select-contact {
+      opacity: 1;
+    }
+  }
+
+  .checkbox--select-contact:checked {
+    opacity: 1;
+  }
+}
