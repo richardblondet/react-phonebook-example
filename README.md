@@ -1,8 +1,6 @@
 # React Phonebook App Example
 
-<div style="text-align:center">
-  ![Phonebook](screenshot.png)
-</div>
+![Phonebook](screenshot.png)
 
 Single page phonebook app using RectJS. Features:
 ● Add a contact with the following fields:
