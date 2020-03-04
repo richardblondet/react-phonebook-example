@@ -3,15 +3,14 @@
 ![Phonebook](screenshot.png)
 
 Single page phonebook app using RectJS. Features:
-● Add a contact with the following fields:
-	○ First name
-	○ Last name
-	○ Country Code
-	○ Phone Number
-● Allow user to list contacts
-● Allow user to view & edit contacts
-● Allow user to select & delete multiple contacts
-
+- Add a contact with the following fields:
+	- First name
+	- Last name
+	- Country Code
+	- Phone Number
+- Allow user to list contacts
+- Allow user to view & edit contacts
+- Allow user to select & delete multiple contacts
 
 ## Getting Started
 
